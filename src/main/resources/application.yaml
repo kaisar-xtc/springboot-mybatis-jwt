@@ -1,0 +1,12 @@
+#数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url:  jdbc:mysql://localhost:3306/test?useSSL=true&characterEncoding=utf-8&serverTimezone=UTC
+
+#整合mybatis
+mybatis:
+  mapper-locations: classpath:com/hsrd/mapper/*.xml
+  type-aliases-package: com.hsrd.entity
